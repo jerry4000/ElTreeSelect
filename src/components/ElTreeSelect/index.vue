@@ -55,10 +55,6 @@ export default {
         data: {
             type: Array
         },
-        emptyText: {
-            type: String,
-            default: '暂无数据'
-        },
         nodeKey: {
             type: String,
             required: true
@@ -177,7 +173,6 @@ export default {
         treeProps () {
             return {
                 data: this.data,
-                emptyText: this.emptyText,
                 nodeKey: this.nodeKey,
                 defaultExpandAll: this.defaultExpandAll,
                 expandOnClickNode: this.expandOnClickNode,
